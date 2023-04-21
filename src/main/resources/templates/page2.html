@@ -2,12 +2,21 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Page1</title>
+    <title>Page2</title>
 </head>
 <body>
-    <h1>Hola mundo desde pantalla segura!</h1>
+    <h1>Perfil de usuario</h1>
     <div>
-        Mensaje: <span th:text="${message}"></span>
+        Client name: <span th:text="${ClientName}"></span>
+    </div>
+    <div>
+        User name: <span th:text="${userName}"></span>
+    </div>
+    <div>
+        User data: <span th:text="${userAttributes}"></span>
+    </div>
+    <div>
+        mensaje: <span th:text="${message}"></span>
     </div>
 
 </body>

@@ -33,9 +33,9 @@ public class HelloController {
             @RegisteredOAuth2AuthorizedClient OAuth2AuthorizedClient client,
             @AuthenticationPrincipal OAuth2User user
             ){ // Se le pasa el cliente autorizado
-        model.addAttribute("clientName", client.getClientRegistration().getClientName());
-        model.addAttribute("Username", user.getName());
-        model.addAttribute("userAtribute", user.getAttributes());
+        model.addAttribute("ClientName", client.getClientRegistration().getClientName());
+        model.addAttribute("userName", user.getName());
+        model.addAttribute("userAttributes", user.getAttributes());
         model.addAttribute("message", "Hello World desde Spring MVC!!");
         return "page2";
     }
